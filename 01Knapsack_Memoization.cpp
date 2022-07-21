@@ -23,7 +23,7 @@ using namespace std;
 
 int knapSack(int val[],int w[],int W,int n,vector<vector<int>> &dp){
     if(n==0||W==0) return 0;
-    if(dp[n][W]!=-1) return dp[W][n];
+    if(dp[W][n]!=-1) return dp[W][n];
     if(w[n-1]<=W) return dp[W][n]=max(knapSack(val,w,W-w[n-1],n-1,dp)+val[n-1],knapSack(val,w,W,n-1,dp));
     else if(w[n-1]>W) return dp[W][n]=knapSack(val,w,W,n-1,dp);
 }
