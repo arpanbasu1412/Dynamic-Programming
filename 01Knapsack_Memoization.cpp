@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// memoized form is top-down
+
 // `````````````I\0````````````````
 
 // Enter the weight of the Knapsack:

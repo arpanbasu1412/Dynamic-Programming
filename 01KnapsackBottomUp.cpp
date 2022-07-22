@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// tabulation format is actually bottom-up
+
 // `````````````I\0````````````````
 
 // Enter the weight of the Knapsack:
