@@ -4,10 +4,19 @@ using namespace std;
 //Problem Link : https://practice.geeksforgeeks.org/problems/subset-sum-problem-1611555638/1
 // w[] ==arr[]     W ==sum
 
+// Enter the Size of the array
+// 6
+// Enter the elements of the Array
+// 3 34 4 12 5 2
+// Enter Sum
+// 9
+// If prints 1 == true and if prints 0 == false
+// 1
+
 class Solution{   
 public:
     bool subsetSum(vector<int>& arr, int sum,vector<vector<bool>>& dp,int n){
-        
+ 
         for (int i = 1; i <=n; i++)
         {
             for (int j = 1; j <= sum; j++)
@@ -37,7 +46,6 @@ public:
     }
 };
 
-//{ Driver Code Starts.
 int main() 
 { 
     
