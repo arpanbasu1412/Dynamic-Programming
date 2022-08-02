@@ -4,7 +4,7 @@ using namespace std;
 
 // *****Another Approach:Using Binary Search*****
 // https://leetcode.com/submissions/detail/763437291/
-
+// https://leetcode.com/problems/super-egg-drop/submissions/
 
 // Enter Number of Eggs and Floors :
 // 2 10
