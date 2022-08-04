@@ -1,14 +1,14 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// https://practice.geeksforgeeks.org/problems/minimum-number-of-deletions4610/1
+// https://practice.geeksforgeeks.org/problems/form-a-palindrome1455/1
 // https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/
 
 // Enter String : 
-// aebcbda
-// Minimum Deletion Steps to Make a String Palindrome is 2
-// Explanation: We'll remove 'e' and
-// 'd' and the string become "abcba".
+// abcd
+// Minimum Insertion Steps to Make a String Palindrome is 3
+// Explanation: Inserted character marked
+// with bold characters in dcbabcd
 
 
 int dp[1001][1001];
@@ -32,7 +32,7 @@ int lcs(string &X,string &Y, int m, int n)
     return dp[m][n];
 }
 
-int minDeletions(string X) {
+int minInsertions(string X) {
     string Y = X;
     reverse(Y.begin(),Y.end());
     int m = X.size();
@@ -47,7 +47,7 @@ int main()
     string X;
     cout<<"Enter String : "<<endl;
     cin>>X;
-	cout<<"Minimum Deletion Steps to Make a String Palindrome is "<< minDeletions(X);
+	cout<<"Minimum Insertion Steps to Make a String Palindrome is "<< minInsertions(X);
 	
 	return 0;
 }
